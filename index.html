@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Collage, Valentine's Letters & Music Player</title>
+    <link rel="stylesheet" href="/css/music.css">
+</head>
+
+<body>
+
+    <iframe src="Counter.html" width="1010" height="500" frameborder="0"></iframe>
+
+    <div class="main-container">
+        <div class="upload-container">
+            <h2>Upload Images for Collage</h2>
+            <input type="file" id="imageUpload" multiple accept="image/*">
+            <div class="collage" id="collageContainer"></div>
+        </div>
+
+        <div class="valentines-container">
+            <h2>Valentine's Letters</h2>
+            <p>Hey You,
+
+                On this special day, I just want to say how thankful I am for you. Every moment we’ve shared—big or
+                small—has been a piece of joy in my life. From laughter-filled days to quiet, comforting times, each
+                memory is a reminder of how lucky I am to have you around. I look forward to making even more beautiful
+                moments together, creating stories we’ll cherish forever. No matter where life takes us, I hope our
+                journey continues to be filled with warmth, happiness, and love.
+
+                Of all the things I could wish for you today, the biggest is that you always know how much you’re
+                appreciated—not just for what you do, but for who you are. You have this incredible way of making life
+                brighter, of turning ordinary moments into something special. And if I don’t say it enough, let me say
+                it now: you mean the world to me. No matter how much time passes, I hope we never stop finding reasons
+                to smile together. Whether it’s through new adventures, late-night talks, or the simple comfort of each
+                other’s presence, I know that as long as we have each other, life will always be a little more
+                beautiful.
+
+                Happy Valentine’s Day. 🤍
+
+
+            </p>
+
+        </div>
+    </div>
+
+    <div class="music-player">
+        <div class="music-disc" id="musicDisc"></div>
+        <div class="audio-container">
+            <h3>Select a Song</h3>
+            <select id="songSelector">
+                <option value="music/Fallen.mp3">Fallen - Lola Amour</option>
+                <option value="music/Pasilyo.mp3">Pasilyo - Sunkissed Lola</option>
+                <option value="music/perfect.mp3">Perfect - Ed Sheeran</option>
+                <option value="music/247, 365.mp3">247, 365 - Elijah Woods</option>
+                <option value="music/Gitna.mp3">Gitna - NOBITA</option>
+                <option value="music/Ikaw Lang Patutunguhan.mp3">Ikaw Lang Patutunguhan - Amiel Sol</option>
+                <option value="music/Sa Bawat Sandali.mp3">Sa Bawat Sandali - Amiel Sol</option>
+            </select>
+            <audio id="audioPlayer" controls>
+                <source src="" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+
+    <script src="/js/music.js"></script>
+</body>
+
+</html>

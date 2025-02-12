@@ -1,0 +1,144 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #FFE7BF;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background: #FF869E;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+/* Input & Button Section */
+input[type="date"] {
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #ffcccb;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #A10035;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #d50000;
+}
+
+/* Countdown Container */
+.countdown-container {
+    background-color: #A10035;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 96%; /* Prevents overflow */
+    overflow: hidden;
+}
+
+/* Countdown Flexbox */
+.countdown {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 20px;
+    width: 100%;
+    max-width: 100%; /* Prevents exceeding width */
+}
+
+/* Individual Time Sections */
+.time-section {
+    flex: 1;
+    min-width: 120px;
+    text-align: center;
+}
+
+/* Time Numbers */
+#years, #months, #days, #hours, #minutes, #seconds {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #fede75;
+}
+
+/* Time Labels */
+.time-label {
+    font-size: 1.1em;
+    color: #ffe6e6;
+    text-transform: uppercase;
+}
+
+/* Next Page Styling */
+.next-page {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Next Page Link */
+.next-page a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    background-color: #ff1744;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.next-page a:hover {
+    background-color: #d50000;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .countdown {
+        flex-wrap: wrap;
+    }
+    .time-section {
+        min-width: 100px;
+    }
+    #years, #months, #days, #hours, #minutes, #seconds {
+        font-size: 2em;
+    }
+}
